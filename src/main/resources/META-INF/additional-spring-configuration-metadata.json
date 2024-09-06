@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "ocpp.ws.allowed-origins",
+      "type": "java.lang.String",
+      "description": "Description for ocpp.ws.allowed-origins."
+    },
+    {
+      "name": "ocpp.ws.endpoint-v2",
+      "type": "java.lang.String",
+      "description": "Connection string."
+    }
+  ] }

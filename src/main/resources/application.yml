@@ -1,1 +1,21 @@
-spring.application.name=websocket-server
+spring:
+  application:
+    name: ws-server-tc
+
+server:
+  port: 29080
+  servlet:
+    context-path: /ws
+
+management:
+  server:
+    port: 8082
+  endpoints:
+    web:
+      base-path: /mgmt
+      exposure.include: health,info,env,metrics,prometheus
+
+ocpp:
+  ws:
+    endpoint-v2: /ocpp/v2/*
+    allowed-origins: "*"
